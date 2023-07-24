@@ -1,0 +1,33 @@
+.container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.title {
+    display: block;
+    text-align: left;
+    font-size: 18px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    font-weight: 400;
+    margin: 2px 0px;
+}
+.input {
+    width: 300px;
+    display: block;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    outline: none;
+    padding: 0 12px;
+    height: 42px;
+    border: 1px solid rgba(105, 137, 196, 0.89);
+    border-radius: 5px;
+
+}
+
+.input:hover {
+    border: 1px solid #A976F5;
+}

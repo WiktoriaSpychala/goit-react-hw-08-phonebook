@@ -1,6 +1,42 @@
+.container {
+    display: flex;
+    justify-content: center;
+}
+.description {
+    display: flex;
+    justify-content: center;
+}
+.list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 0;
+}
+
 .number {
-    margin: 0px 15px;
+    margin: 0px 10px;
 }
+
 .list__contact {
-    margin-bottom: 5px;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    justify-content: space-between;
+
 }
+.button {
+    background-color: rgb(197, 219, 241);
+    border-radius: 25px;
+    border: none;
+    padding: 5px 15px;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 1.2;
+    text-align: center;
+    margin-left: 10px;
+}
+.button:hover {
+      background: #30609e;
+      color: white;
+    }

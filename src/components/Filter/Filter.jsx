@@ -1,6 +1,7 @@
-import { setFilter } from '../../redux/filterSlice';
+import { setFilter } from 'redux/filterSlice';
 import { useDispatch, useSelector } from 'react-redux';
-import { getContactFilter } from '../../redux/selectors';
+import { getContactFilter } from 'redux/selectors';
+import css from './Filter.module.css'
 
 const Filter = () => {
   const dispatch = useDispatch();
@@ -11,10 +12,11 @@ const Filter = () => {
   };
 
   return (
-    <>
+    <div  className={css.container}>
       <label htmlFor="findInputId">
-        <h3>Find contacts by name:</h3>
+        <h3 className={css.title}>Find contacts by name:</h3>
         <input
+          className={css.input}
           type="text"
           name="filterContact"
           id="findInputId"
@@ -24,7 +26,7 @@ const Filter = () => {
           onChange={e => onFilterChange(e.target.value)}
         ></input>
       </label>
-    </>
+    </div>
   );
 };
 

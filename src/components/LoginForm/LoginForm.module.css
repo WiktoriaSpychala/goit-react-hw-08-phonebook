@@ -1,9 +1,3 @@
-.container {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    border-bottom: 1px solid #30609e;
-}
 
 .form {
     width: 300px;
@@ -11,17 +5,16 @@
     flex-direction: column;
     gap: 16px;
     justify-content: flex-start;
-    margin: 20px auto;
-}
-
-.label {
+    margin: 40px auto;
+  }
+  
+  .label {
     display: block;
     text-align: left;
     font-size: 16px;
-    font-weight: 400;
-    margin: 5px 0px;
-}
-.input {
+  }
+  
+  .input {
     display: block;
     font-weight: 300;
     font-size: 18px;
@@ -34,9 +27,13 @@
     border: 1px solid rgba(105, 137, 196, 0.89);
     border-radius: 5px;
   }
-
-.addContactBtn {
-    color: rgb(0, 0, 0);
+  
+  .input:hover {
+      border: 1px solid #07040b;
+  }
+  
+  .button {
+      color: rgb(0, 0, 0);
       font-weight: 400;
       font-size: 18px;
       line-height: 1.2;
@@ -45,13 +42,13 @@
       padding: 8px;
       border-radius: 25px;
       height: 42px;
-      width: 150px;
+      width: 100px;
       border: none;
       background: rgb(197, 219, 241);
-      margin-left: 75px;
+      margin-left: 100px;
     }
     
-    .addContactBtn:hover {
+    .button:hover {
       background: #30609e;
-      color: white;
     }
+  
